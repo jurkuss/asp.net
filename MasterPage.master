@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!doctype html>
+
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site by Simas Jurkus</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+      
+   <!-- Navigation bar using foundation -->
+<div class="top-bar">
+    <img class="logo" src="images/logo.png">
+  <div class="top-bar-title">
+    <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+      <button class="menu-icon dark" type="button" data-toggle></button>
+    </span>
+    
+  </div>
+  <div id="responsive-menu">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li><a href="#">Our Products</a></li>
+        <li><a href="#">Where to buy</a></li>
+        <li><a href="#">News & Reviews</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">My Opticron</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><input type="search" placeholder="My Optricon..."></li>
+        <li><button type="button" class="button">Search</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+      <div class="banner-image">
+          <img src="images/banner.jpg">
+      </div>
+      <!--Section part new products, field events lastest news gallery -->
+      <div class="main">
+          <asp:ContentPlaceHolder id="mainContent1" runat="server">
+
+          </asp:ContentPlaceHolder>
+      
+      
+          </div>
+          
+      <!-- End -->
+      <div class="footer-color">
+       <p class="address">Optricon Unit 21, Titan Court, Laporte Way, Luton, Bedfordshire, LU4 8EF, UK</p>   
+      <p class="phone-number">call <b>01582 726522</b></p>
+      <p class="email">email us <b>sales@optricon.co.uk</b></p>
+          
+              <li><a class="link1" href="#">Site map /</a></li>
+              <li><a class="link1" href="#">Terms /</a></li>
+              <li><a class="link1" href="#">Privacy Policy /</a></li>
+              <li><a class="link1" href="http://www.simasjurkus.com">Site by Simas Jurkus</a></li>
+          <img class="social" src="images/socialslinks.png">
+            
+      </div>
+      
+      
+      
+      
+      
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/carousel.js"></script>
+    
+  </body>
+</html>
